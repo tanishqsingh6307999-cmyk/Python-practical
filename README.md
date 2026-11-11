@@ -103,6 +103,94 @@ print("Reverse Pyramid:")
 for i in range(n, 0, -1):
     print(" " * (n - i) + "* " * i)
 
+ 
+ 
+ ##Practical 4:wright a program that accepts a character  and performs the following:
+
+  a. print whether the character is a letter or numeric digit or a special character. 
+  b. if the character is a letter, print whether the letter is uppercase or lowercase. 
+  c. if the character is a numeric digit, prints its name in text(e.g, if input is 9,output is NINE) 
+
+s = input("Enter a string: ")
+
+ a. Frequency of a character
+ch = input("Enter character to find frequency: ")
+print("Frequency:", s.count(ch))
 
 
-    ##Practical 4:wright a program
+ b. Replace a character
+old = input("Enter character to replace: ")
+new = input("Enter new character: ")
+
+print("After replacement:", s.replace(old, new))
+
+
+ c. Remove first occurrence
+ch = input("Enter character to remove first occurrence: ")
+
+print("After removing first occurrence:",
+      s.replace(ch, "", 1))
+
+
+ d. Remove all occurrences
+ch = input("Enter character to remove completely: ")
+
+print("After removing all occurrences:",
+      s.replace(ch, ""))
+
+
+
+
+##Practical 5:Write a program to perform the following operations on a string 
+
+  a. find the frequency of a character in a strig . 
+  b. Replace a characters by another  character in a string. 
+  c. Remove the first occurrence of acharacter from a string. 
+  d. Remove all occurrences of a character from a string. 
+
+
+s = input("Enter a string: ")
+
+ a. Frequency of a character
+ch = input("Enter character to find frequency: ")
+print("Frequency:", s.count(ch))
+
+
+ b. Replace a character
+old = input("Enter character to replace: ")
+new = input("Enter new character: ")
+
+print("After replacement:", s.replace(old, new))
+
+
+ c. Remove first occurrence
+ch = input("Enter character to remove first occurrence: ")
+
+print("After removing first occurrence:",
+      s.replace(ch, "", 1))
+
+
+ d. Remove all occurrences
+ch = input("Enter character to remove completely: ")
+
+print("After removing all occurrences:",
+      s.replace(ch, ""))
+
+
+##Practical 6:Write a program to swap the first n characters of two strings. 
+
+s1 = input("Enter first string: ")
+s2 = input("Enter second string: ")
+
+n = int(input("Enter number of characters to swap: "))
+
+if n < 0 or n > len(s1) or n > len(s2):
+    print("Invalid number of characters")
+
+else:
+    new_s1 = s2[:n] + s1[n:]
+    new_s2 = s1[:n] + s2[n:]
+
+    print("First string after swapping:", new_s1)
+    print("Second string after swapping:", new_s2)
+
