@@ -35,5 +35,8 @@ else:
     print("First root:", root1)
     print("Second root:", root2) 
 
-##Practical 2:
-  
+##Practical 2:Wright a program to accept a number 'n'and 
+ a. check if 'n'is prime
+ b. generate all prime number till 'n'
+ c. generate first 'n' prime numbers
+this program may be done using functions
