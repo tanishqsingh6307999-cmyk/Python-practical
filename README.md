@@ -40,3 +40,69 @@ else:
  b. generate all prime number till 'n'
  c. generate first 'n' prime numbers
 this program may be done using functions
+
+def is_prime(n):
+    if n < 2:
+        return False
+
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+
+    return True
+
+
+n = int(input("Enter a number: "))
+
+# a. Check prime number
+if is_prime(n):
+    print(n, "is a prime number")
+else:
+    print(n, "is not a prime number")
+
+
+# b. Generate prime numbers till n
+print("Prime numbers till", n, ":")
+
+for i in range(2, n + 1):
+    if is_prime(i):
+        print(i, end=" ")
+
+print()
+
+
+# c. Generate first n prime numbers
+print("First", n, "prime numbers:")
+
+count = 0
+num = 2
+
+while count < n:
+    if is_prime(num):
+        print(num, end=" ")
+        count += 1
+
+    num += 1
+
+
+
+
+##Practical 3:Create a pyramid and reverse pyramid using*
+
+
+n = int(input("Enter number of rows: "))
+
+print("Pyramid:")
+
+for i in range(1, n + 1):
+    print(" " * (n - i) + "* " * i)
+
+
+print("Reverse Pyramid:")
+
+for i in range(n, 0, -1):
+    print(" " * (n - i) + "* " * i)
+
+
+
+    ##Practical 4:wright a program
