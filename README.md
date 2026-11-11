@@ -15,7 +15,7 @@
 |Year |2025-26|
 
 
-#Practical 1: Find the roots of a quadratic equation
+##Practical 1: Find the roots of a quadratic equation
 Aim: Write a Python program to find the roots of a quadratic equation.
 Equation: 
 import cmath
