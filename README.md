@@ -15,7 +15,7 @@
 |Year |2025-26|
 
 
-Practical 1: Find the roots of a quadratic equation
+#Practical 1: Find the roots of a quadratic equation
 Aim: Write a Python program to find the roots of a quadratic equation.
 Equation: 
 import cmath
@@ -35,89 +35,12 @@ else:
     print("First root:", root1)
     print("Second root:", root2) 
 
-a. Check prime number
-if is_prime(n):
-    print(n, "is a prime number")
-else:
-    print(n, "is not a prime number")
-
-Practical 2: Check and generate prime numbers
-Aim: Write a Python program to:
-a. Check whether a number is prime.
-b. Generate all prime numbers till n.
-c. Generate the first n prime numbers.
-# b. Generate prime numbers till n
-print("Prime numbers till", n, ":")
-
-for i in range(2, n + 1):
-    if is_prime(i):
-        print(i, end=" ")
-
-print()
-
-
-# c. Generate first n prime numbers
-print("First", n, "prime numbers:")
-
-count = 0
-num = 2
-
-while count < n:
-    if is_prime(num):
-        print(num, end=" ")
-        count += 1
-
-    num += 1
-
-
-def is_prime(n):
-    if n < 2:
-        return False
-
-    for i in range(2, int(n**0.5) + 1):
-        if n % i == 0:
-            return False
-
-    return True
-
-
-n = int(input("Enter a number: "))
-
 # a. Check prime number
 if is_prime(n):
     print(n, "is a prime number")
 else:
-    print(n, "is not a prime number")
-
-
-# b. Generate prime numbers till n
-print("Prime numbers till", n, ":")
-
-for i in range(2, n + 1):
-    if is_prime(i):
-        print(i, end=" ")
-
-
-
-def is_prime(n):
-    if n < 2:
-        return False
-
-    for i in range(2, int(n**0.5) + 1):
-        if n % i == 0:
-            return False
-
-    return True
-
-
-n = int(input("Enter a number: "))
-
-# a. Check prime number
-if is_prime(n):
-    print(n, "is a prime number")
-else:
-    print(n, "is not a prime number")
-
+    print(n, "is not a prime number.
+    
 
 # b. Generate prime numbers till n
 print("Prime numbers till", n, ":")
@@ -142,6 +65,7 @@ while count < n:
 
     num += 1
 
+
 def is_prime(n):
     if n < 2:
         return False
@@ -153,52 +77,5 @@ def is_prime(n):
     return True
 
 
- = int(input("Enter a number: "))
-
-# 
-print()
-
-
-# c. Generate first n prime numbers
-print("First", n, "prime numbers:")
-
-count = 0
-num = 2
-
-while count < n:
-    if is_prime(num):
-        print(num, end=" ")
-        count += 1
-
-    num += 1
-
-n = int(input("Enter number of rows: "))
-
-print("Pyramid:")
-
-for i in range(1, n + 1):
-    print(" " * (n - i) + "* " * i)
-
-
-print("Reverse Pyramid:")
-
-for i in range(n, 0, -1):
-    print(" " * (n - i) + "* " * i)
-
-
-
-
-
-n = int(input("Enter number of rows: "))
-
-print("Pyramid:")
-
-for i in range(1, n + 1):
-    print(" " * (n - i) + "* " * i)
-
-
-print("Reverse Pyramid:")
-
-for i in range(n, 0, -1):
-    print(" " * (n - i) + "* " * i)
+n = int(input("Enter a number: ")) 
   
