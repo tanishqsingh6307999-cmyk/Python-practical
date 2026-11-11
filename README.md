@@ -3,6 +3,7 @@
 
 ## Student Details
 |field | Details |
+|:-----| :------|
 |Name  |Aman kumar|
 |Course|Bsc (hon) computer science|
 |Semester| 1 semester |
