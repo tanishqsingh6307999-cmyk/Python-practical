@@ -35,47 +35,5 @@ else:
     print("First root:", root1)
     print("Second root:", root2) 
 
-# a. Check prime number
-if is_prime(n):
-    print(n, "is a prime number")
-else:
-    print(n, "is not a prime number.
-    
 
-# b. Generate prime numbers till n
-print("Prime numbers till", n, ":")
-
-for i in range(2, n + 1):
-    if is_prime(i):
-        print(i, end=" ")
-
-print()
-
-
-# c. Generate first n prime numbers
-print("First", n, "prime numbers:")
-
-count = 0
-num = 2
-
-while count < n:
-    if is_prime(num):
-        print(num, end=" ")
-        count += 1
-
-    num += 1
-
-
-def is_prime(n):
-    if n < 2:
-        return False
-
-    for i in range(2, int(n**0.5) + 1):
-        if n % i == 0:
-            return False
-
-    return True
-
-
-n = int(input("Enter a number: ")) 
   
