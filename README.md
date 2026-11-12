@@ -234,3 +234,37 @@ result = find_occurrences(s1, s2)
 print("Result:", result)
 
 
+
+##Practical 8:
+
+
+
+
+
+
+
+
+# Input list
+my_list = [1, 2, 3, 4, 5, 6, "Hello", 8.5, 10]
+
+# a. Using for loop
+
+result1 = []
+
+for x in my_list:
+    if type(x) == int and x % 2 == 0:
+        result1.append(x ** 3)
+
+print("Using for loop:", result1)
+
+
+# b. Using list comprehension
+
+result2 = [x ** 3 for x in my_list
+           if type(x) == int and x % 2 == 0]
+
+print("Using list comprehension:", result2)
+
+
+
+
