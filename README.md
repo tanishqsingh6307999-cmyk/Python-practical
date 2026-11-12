@@ -194,3 +194,43 @@ else:
     print("First string after swapping:", new_s1)
     print("Second string after swapping:", new_s2)
 
+
+
+
+##Practical 7:
+
+
+
+
+
+
+
+
+def find_occurrences(str1, str2):
+
+    indices = []
+    start = 0
+
+    while True:
+        index = str1.find(str2, start)
+
+        if index == -1:
+            break
+
+        indices.append(index)
+        start = index + 1
+
+    if len(indices) == 0:
+        return -1
+
+    return indices
+
+
+s1 = input("Enter first string: ")
+s2 = input("Enter second string: ")
+
+result = find_occurrences(s1, s2)
+
+print("Result:", result)
+
+
